@@ -13,9 +13,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.6
-
-      - run: pip install wheel pip setuptools -U
-      - run: pip install ".[dev]" --progress-bar off -Uf https://download.pytorch.org/whl/cpu/torch_stable.html
+          
       - run: echo "CODEQL_PYTHON=$(which python)" >> $GITHUB_ENV
 
       - uses: github/codeql-action/init@v1
