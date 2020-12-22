@@ -1,4 +1,4 @@
-ame: ci_unittest
+name: ci_unittest
 
 on:
   push:
