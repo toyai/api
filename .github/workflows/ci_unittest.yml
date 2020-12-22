@@ -35,7 +35,7 @@ jobs:
             ${{ steps.get-date.outputs.date }}-py${{ matrix.python_version }}
             ${{ steps.get-date.outputs.date }}-py
       - run: pip install wheel pip setuptools -U
-      - run: pip install ".[testing]" --progress-bar off -Uf https://download.pytorch.org/whl/cpu/torch_stable.html
+      # - run: pip install ".[testing]" --progress-bar off -Uf https://download.pytorch.org/whl/cpu/torch_stable.html
       # - run: bash ./scripts/run_tests.sh
         env:
           TORCH_UTILS_COLLECT_ENV: 1
