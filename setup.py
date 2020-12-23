@@ -42,7 +42,7 @@ setup(
     name="toyapi",
     version=VERSION,
     author="toyai",
-    url="https://github.com/toyai/toyapi",
+    url="https://github.com/toyai/api",
     description="API for experimented DL Models",
     long_description_content_type="text/markdown",
     long_description=readme,
